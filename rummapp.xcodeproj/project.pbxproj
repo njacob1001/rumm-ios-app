@@ -16,6 +16,8 @@
 		571C31FB276F9E30004F4D0B /* rummappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C31FA276F9E30004F4D0B /* rummappTests.swift */; };
 		571C3205276F9E30004F4D0B /* rummappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C3204276F9E30004F4D0B /* rummappUITests.swift */; };
 		571C3207276F9E30004F4D0B /* rummappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C3206276F9E30004F4D0B /* rummappUITestsLaunchTests.swift */; };
+		575DAC61277FB54F00DFF0DB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC60277FB54F00DFF0DB /* Home.swift */; };
+		575DAC64277FB57F00DFF0DB /* Patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC63277FB57F00DFF0DB /* Patterns.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		571C3200276F9E30004F4D0B /* rummappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rummappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		571C3204276F9E30004F4D0B /* rummappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rummappUITests.swift; sourceTree = "<group>"; };
 		571C3206276F9E30004F4D0B /* rummappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rummappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		575DAC60277FB54F00DFF0DB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		575DAC63277FB57F00DFF0DB /* Patterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patterns.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +102,14 @@
 		571C31E3276F9E2F004F4D0B /* rummapp */ = {
 			isa = PBXGroup;
 			children = (
+				575DAC5F277FB53500DFF0DB /* screens */,
+				575DAC5D277FB36200DFF0DB /* schemas */,
+				575DAC5C277FB35B00DFF0DB /* atoms */,
+				575DAC5B277FB34700DFF0DB /* components */,
+				575DAC5E277FB36700DFF0DB /* layouts */,
+				571C31E8276F9E30004F4D0B /* Assets.xcassets */,
 				571C31E4276F9E2F004F4D0B /* rummappApp.swift */,
 				571C31E6276F9E2F004F4D0B /* ContentView.swift */,
-				571C31E8276F9E30004F4D0B /* Assets.xcassets */,
 				571C31ED276F9E30004F4D0B /* Persistence.swift */,
 				571C31EF276F9E30004F4D0B /* rummapp.xcdatamodeld */,
 				571C31EA276F9E30004F4D0B /* Preview Content */,
@@ -131,6 +140,51 @@
 				571C3206276F9E30004F4D0B /* rummappUITestsLaunchTests.swift */,
 			);
 			path = rummappUITests;
+			sourceTree = "<group>";
+		};
+		575DAC5B277FB34700DFF0DB /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		575DAC5C277FB35B00DFF0DB /* atoms */ = {
+			isa = PBXGroup;
+			children = (
+				575DAC62277FB56B00DFF0DB /* Backgrounds */,
+			);
+			path = atoms;
+			sourceTree = "<group>";
+		};
+		575DAC5D277FB36200DFF0DB /* schemas */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = schemas;
+			sourceTree = "<group>";
+		};
+		575DAC5E277FB36700DFF0DB /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		575DAC5F277FB53500DFF0DB /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				575DAC60277FB54F00DFF0DB /* Home.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		575DAC62277FB56B00DFF0DB /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				575DAC63277FB57F00DFF0DB /* Patterns.swift */,
+			);
+			path = Backgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +319,10 @@
 			files = (
 				571C31EE276F9E30004F4D0B /* Persistence.swift in Sources */,
 				571C31E7276F9E2F004F4D0B /* ContentView.swift in Sources */,
+				575DAC61277FB54F00DFF0DB /* Home.swift in Sources */,
 				571C31F1276F9E30004F4D0B /* rummapp.xcdatamodeld in Sources */,
 				571C31E5276F9E2F004F4D0B /* rummappApp.swift in Sources */,
+				575DAC64277FB57F00DFF0DB /* Patterns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +483,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"rummapp/Preview Content\"";
+				DEVELOPMENT_TEAM = Y743DA2X6Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -455,6 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"rummapp/Preview Content\"";
+				DEVELOPMENT_TEAM = Y743DA2X6Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
