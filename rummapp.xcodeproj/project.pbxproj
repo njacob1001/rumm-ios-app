@@ -18,6 +18,12 @@
 		571C3207276F9E30004F4D0B /* rummappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571C3206276F9E30004F4D0B /* rummappUITestsLaunchTests.swift */; };
 		575DAC61277FB54F00DFF0DB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC60277FB54F00DFF0DB /* Home.swift */; };
 		575DAC64277FB57F00DFF0DB /* Patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC63277FB57F00DFF0DB /* Patterns.swift */; };
+		575DAC69277FD16700DFF0DB /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC68277FD16700DFF0DB /* colors.swift */; };
+		575DAC6B277FEE2F00DFF0DB /* Modable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575DAC6A277FEE2F00DFF0DB /* Modable.swift */; };
+		575DAC7A2780C2D800DFF0DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 575DAC7C2780C2D800DFF0DB /* Localizable.strings */; };
+		578CD9432781F5DE0062CE72 /* ButtonFilled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CD9422781F5DE0062CE72 /* ButtonFilled.swift */; };
+		578CD9452781F85A0062CE72 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CD9442781F85A0062CE72 /* Login.swift */; };
+		578CD947278209590062CE72 /* TunedModable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578CD946278209590062CE72 /* TunedModable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,13 @@
 		571C3206276F9E30004F4D0B /* rummappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rummappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		575DAC60277FB54F00DFF0DB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		575DAC63277FB57F00DFF0DB /* Patterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patterns.swift; sourceTree = "<group>"; };
+		575DAC68277FD16700DFF0DB /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		575DAC6A277FEE2F00DFF0DB /* Modable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modable.swift; sourceTree = "<group>"; };
+		575DAC7B2780C2D800DFF0DB /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		575DAC7E2780F87500DFF0DB /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		578CD9422781F5DE0062CE72 /* ButtonFilled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFilled.swift; sourceTree = "<group>"; };
+		578CD9442781F85A0062CE72 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		578CD946278209590062CE72 /* TunedModable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunedModable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +115,8 @@
 		571C31E3276F9E2F004F4D0B /* rummapp */ = {
 			isa = PBXGroup;
 			children = (
+				575DAC722780BF0D00DFF0DB /* resources */,
+				575DAC67277FD15700DFF0DB /* helpers */,
 				575DAC5F277FB53500DFF0DB /* screens */,
 				575DAC5D277FB36200DFF0DB /* schemas */,
 				575DAC5C277FB35B00DFF0DB /* atoms */,
@@ -152,6 +167,7 @@
 		575DAC5C277FB35B00DFF0DB /* atoms */ = {
 			isa = PBXGroup;
 			children = (
+				578CD9412781F5C30062CE72 /* Buttons */,
 				575DAC62277FB56B00DFF0DB /* Backgrounds */,
 			);
 			path = atoms;
@@ -167,6 +183,8 @@
 		575DAC5E277FB36700DFF0DB /* layouts */ = {
 			isa = PBXGroup;
 			children = (
+				575DAC6A277FEE2F00DFF0DB /* Modable.swift */,
+				578CD946278209590062CE72 /* TunedModable.swift */,
 			);
 			path = layouts;
 			sourceTree = "<group>";
@@ -175,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				575DAC60277FB54F00DFF0DB /* Home.swift */,
+				578CD9442781F85A0062CE72 /* Login.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -185,6 +204,30 @@
 				575DAC63277FB57F00DFF0DB /* Patterns.swift */,
 			);
 			path = Backgrounds;
+			sourceTree = "<group>";
+		};
+		575DAC67277FD15700DFF0DB /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				575DAC68277FD16700DFF0DB /* colors.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		575DAC722780BF0D00DFF0DB /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				575DAC7C2780C2D800DFF0DB /* Localizable.strings */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		578CD9412781F5C30062CE72 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				578CD9422781F5DE0062CE72 /* ButtonFilled.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +315,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				es,
 			);
 			mainGroup = 571C31D8276F9E2E004F4D0B;
 			productRefGroup = 571C31E2276F9E2F004F4D0B /* Products */;
@@ -292,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				571C31EC276F9E30004F4D0B /* Preview Assets.xcassets in Resources */,
+				575DAC7A2780C2D800DFF0DB /* Localizable.strings in Resources */,
 				571C31E9276F9E30004F4D0B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,9 +362,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				571C31EE276F9E30004F4D0B /* Persistence.swift in Sources */,
+				578CD9452781F85A0062CE72 /* Login.swift in Sources */,
 				571C31E7276F9E2F004F4D0B /* ContentView.swift in Sources */,
+				575DAC69277FD16700DFF0DB /* colors.swift in Sources */,
 				575DAC61277FB54F00DFF0DB /* Home.swift in Sources */,
+				575DAC6B277FEE2F00DFF0DB /* Modable.swift in Sources */,
 				571C31F1276F9E30004F4D0B /* rummapp.xcdatamodeld in Sources */,
+				578CD947278209590062CE72 /* TunedModable.swift in Sources */,
+				578CD9432781F5DE0062CE72 /* ButtonFilled.swift in Sources */,
 				571C31E5276F9E2F004F4D0B /* rummappApp.swift in Sources */,
 				575DAC64277FB57F00DFF0DB /* Patterns.swift in Sources */,
 			);
@@ -358,11 +407,24 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		575DAC7C2780C2D800DFF0DB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				575DAC7B2780C2D800DFF0DB /* es */,
+				575DAC7E2780F87500DFF0DB /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		571C3208276F9E30004F4D0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -424,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

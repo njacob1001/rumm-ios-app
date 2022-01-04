@@ -7,18 +7,39 @@
 
 import SwiftUI
 
-struct Patterns: View {
+struct Patterns<Content: View>: View {
+    var theme = "client"
+    @ViewBuilder var content:() ->  Content
+    
     var body: some View {
-        LinearGradient(
-            gradient: Gradient(
-                colors: [Color.red, Color.blue]
-            ), startPoint: .leading, endPoint: /*@START_MENU_TOKEN@*/.trailing/*@END_MENU_TOKEN@*/)
-
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(
+                    colors: getGradientByTheme(theme: self.theme)
+                ),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            Image("Pattern")
+                .resizable()
+                .scaledToFit()
+                .frame(
+                    minWidth: 0,
+                    maxWidth: .infinity,
+                    minHeight: 0,
+                    maxHeight: .infinity,
+                    alignment: .center
+                )
+            content()
+        }.ignoresSafeArea()
+        
     }
 }
 
 struct Patterns_Previews: PreviewProvider {
     static var previews: some View {
-        Patterns()
+        Patterns(theme: "company") {
+            Text("Hello v2")
+        }
     }
 }
